@@ -23,7 +23,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://sandbox.nir.national.nhs.uk/xca/iti-38?wsdl",
+							"raw": "https://sandbox.nir.national.nhs.uk/xca/iti-38/service.wsdl",
 							"protocol": "https",
 							"host": [
 								"sandbox",
@@ -34,13 +34,8 @@
 							],
 							"path": [
 								"xca",
-								"iti-38"
-							],
-							"query": [
-								{
-									"key": "wsdl",
-									"value": null
-								}
+								"iti-38",
+								"service.wsdl"
 							]
 						},
 						"description": "Returns a WSDL (Web Services Description Language) document describing the ITI-38 endpoint."
@@ -858,7 +853,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://sandbox.nir.national.nhs.uk/xca/iti-39?wsdl",
+							"raw": "https://sandbox.nir.national.nhs.uk/xca/iti-39/service.wsdl",
 							"protocol": "https",
 							"host": [
 								"sandbox",
@@ -869,13 +864,8 @@
 							],
 							"path": [
 								"xca",
-								"iti-39"
-							],
-							"query": [
-								{
-									"key": "wsdl",
-									"value": null
-								}
+								"iti-39",
+								"service.wsdl"
 							]
 						},
 						"description": "Returns a WSDL (Web Services Description Language) document describing the ITI-39 endpoint."
@@ -1683,6 +1673,37 @@
 		{
 			"name": "RAD75 Image Study Retrieve",
 			"item": [
+				{
+					"name": "GET WSDL",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/soap+xml; charset=utf-8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.nir.national.nhs.uk/xcai/rad-75/service.wsdl",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"nir",
+								"national",
+								"nhs",
+								"uk"
+							],
+							"path": [
+								"xcai",
+								"rad-75",
+								"service.wsdl"
+							]
+						},
+						"description": "Returns a WSDL (Web Services Description Language) document describing the RAD75 endpoint."
+					},
+					"response": []
+				},
 				{
 					"name": "Single DICOM Study Retrieve (MRBRAIN)",
 					"protocolProfileBehavior": {
