@@ -1674,6 +1674,37 @@
 			"name": "RAD75 Image Study Retrieve",
 			"item": [
 				{
+					"name": "GET WSDL",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/soap+xml; charset=utf-8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.nir.national.nhs.uk/xcai/rad-75/service.wsdl",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"nir",
+								"national",
+								"nhs",
+								"uk"
+							],
+							"path": [
+								"xcai",
+								"rad-75",
+								"service.wsdl"
+							]
+						},
+						"description": "Returns a WSDL (Web Services Description Language) document describing the RAD75 endpoint."
+					},
+					"response": []
+				},
+				{
 					"name": "Single DICOM Study Retrieve (MRBRAIN)",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {
